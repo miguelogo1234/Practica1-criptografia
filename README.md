@@ -89,3 +89,12 @@ The key space size is an upper bound for security, not a guarantee. Although $26
 
 ## 8. Limitations
 All implementations, cryptographic algorithms, and statistical breakers passed the automated test suite successfully, including edge cases. Proactive mathematical defenses, such as validateA using the Extended Euclidean Algorithm (egcd) to block non-coprime multipliers in real-time, work as intended. Text normalization properly sanitizes all inputs. There are no known limitations or hidden failures.
+## 9. AI Assistant Declaration
+In accordance with the course guidelines, I declare the use of an LLM assistant during the final stages of this project.
+
+* **Tool used:** Google Gemini.
+* **Parts assisted with:**
+  * **Debugging:** Assisted in identifying a logical assertion error in the `test_edge_cases` function within `tests/test_ciphers.py` (specifically, correcting the mathematical expected output of the Caesar cipher for a single letter).
+  * **Documentation & Formatting:** Helped restructure my original Spanish theoretical notes and experimental data into the 8-point Markdown format required by the rubric. The LLM was used to format the CLI percentage tables and translate my technical conclusions into academic English.
+  * **Project structure:** Provided advice on best practices for Python directory structures, including how to properly organize the `.zip` submission to exclude `__pycache__` and non-essential scripts.
+* **What I changed / Original work:** All core cryptographic algorithms (Caesar, Affine, Vigenère, Monoalphabetic), statistical breakers, the CLI implementation (`crypto.py`), and the actual execution of the experiments to gather the empirical data are entirely my own original work. I provided the initial technical analysis (such as the $L/m$ coset logic and the "QAT" trigram discovery), and the LLM merely polished, formatted, and translated my conclusions.
